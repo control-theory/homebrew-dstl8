@@ -11,7 +11,7 @@ class Dstl8 < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/control-theory/dstl8/releases/download/v0.1.0-test/dstl8_0.1.0-test_darwin_amd64.tar.gz"
-      sha256 "59a6bf02832a49bbb58ddfb6ff24533d1436bbd27e4667c81d08bf45ed56dd52"
+      sha256 "d5f43d46ed0963701c08064506ac8da99336afd411722c5c67453c2ac37822d1"
 
       define_method(:install) do
         bin.install "dstl8"
@@ -19,7 +19,7 @@ class Dstl8 < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/control-theory/dstl8/releases/download/v0.1.0-test/dstl8_0.1.0-test_darwin_arm64.tar.gz"
-      sha256 "e7b9e8778064274eb59e5b1462229b291c0d762fb9805eed893033c64cca085c"
+      sha256 "6528050e860a7e2333e170da43b4a3c0d38031104d88dd89fd4481f1149e5aa0"
 
       define_method(:install) do
         bin.install "dstl8"
@@ -30,14 +30,14 @@ class Dstl8 < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/control-theory/dstl8/releases/download/v0.1.0-test/dstl8_0.1.0-test_linux_amd64.tar.gz"
-      sha256 "4f446fb92233dd0dfb3a05bb6864268ac38b5d2e6077e94bae181aab69fabf5e"
+      sha256 "bdb6c9a7ea085442bc56f96cbfe0873fc0794f0c18bec3d4ac2a958475f68681"
       define_method(:install) do
         bin.install "dstl8"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/control-theory/dstl8/releases/download/v0.1.0-test/dstl8_0.1.0-test_linux_arm64.tar.gz"
-      sha256 "ddd92afba47b23fe6a3c82f537c54d7b2b423cef8ea92cc446a6eeab9f5fc061"
+      sha256 "0cf892386d70c381ef683d3430ebf6bd6c446702033ac3cdb7fe7e8259c97fa9"
       define_method(:install) do
         bin.install "dstl8"
       end
