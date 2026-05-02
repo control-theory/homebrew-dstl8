@@ -6,7 +6,7 @@ class Dstl8 < Formula
   desc "CLI and TUI for the dstl8 observability platform"
   homepage "https://dstl8.ai"
   version "0.1.0-test"
-  license "Proprietary"
+  license "LicenseRef-Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
@@ -45,6 +45,6 @@ class Dstl8 < Formula
   end
 
   test do
-    system "#{bin}/dstl8", "version"
+    system bin/"dstl8", "version"
   end
 end
