@@ -5,20 +5,20 @@
 class Dstl8 < Formula
   desc "CLI and TUI for the dstl8 observability platform"
   homepage "https://dstl8.ai"
-  version "0.1.1-test"
+  version "0.1.2-test"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/control-theory/dstl8/releases/download/v0.1.1-test/dstl8_0.1.1-test_darwin_amd64.tar.gz"
-      sha256 "76dfd5467433e78aa1dd93f29acd760a11cfae07c7b95295c167695b4531e916"
+      url "https://github.com/control-theory/dstl8/releases/download/v0.1.2-test/dstl8_0.1.2-test_darwin_amd64.tar.gz"
+      sha256 "8b90b6f6ded7fbadeafb98a6f73bb171fa7ed3d1d9dad4c8272d77241de7e543"
 
       define_method(:install) do
         bin.install "dstl8"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/control-theory/dstl8/releases/download/v0.1.1-test/dstl8_0.1.1-test_darwin_arm64.tar.gz"
-      sha256 "efb3f580c461abce62dc0d4dd5601103a7f5d25cab832685c56e0c426a6d4bac"
+      url "https://github.com/control-theory/dstl8/releases/download/v0.1.2-test/dstl8_0.1.2-test_darwin_arm64.tar.gz"
+      sha256 "d396ae616ff9ea5c12083d862359375d1c9a7e47133e96a4e14ea44959aadcdd"
 
       define_method(:install) do
         bin.install "dstl8"
@@ -28,15 +28,15 @@ class Dstl8 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/control-theory/dstl8/releases/download/v0.1.1-test/dstl8_0.1.1-test_linux_amd64.tar.gz"
-      sha256 "c7dfc6145d0c88a87a39508cd0bf4a1a44aae97e7d8be0e501b6efa76485938f"
+      url "https://github.com/control-theory/dstl8/releases/download/v0.1.2-test/dstl8_0.1.2-test_linux_amd64.tar.gz"
+      sha256 "5f8708e278f7ab56c7b3ebfbf6c01642ec70e68d7919363486883947c683c85c"
       define_method(:install) do
         bin.install "dstl8"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/control-theory/dstl8/releases/download/v0.1.1-test/dstl8_0.1.1-test_linux_arm64.tar.gz"
-      sha256 "f46612087457a38e2138684bdf8c98025a18fbb585c0f93bd791cc8bc100384c"
+      url "https://github.com/control-theory/dstl8/releases/download/v0.1.2-test/dstl8_0.1.2-test_linux_arm64.tar.gz"
+      sha256 "579360bde5f65bb94acf0712a199f8e26c9597b0c9114394dac2c377ada06dbf"
       define_method(:install) do
         bin.install "dstl8"
       end
