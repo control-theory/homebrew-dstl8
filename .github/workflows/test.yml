@@ -29,6 +29,13 @@ jobs:
       - name: Tap
         run: brew tap control-theory/dstl8 .
 
+      # Homebrew (June 2026+) requires non-official taps to be explicitly
+      # trusted when $HOMEBREW_REQUIRE_TAP_TRUST is set, which the hosted Linux
+      # runners enable by default. Without this the install step fails with
+      # "Refusing to load formula ... from untrusted tap".
+      - name: Trust tap
+        run: brew trust --tap control-theory/dstl8
+
       - name: Install
         run: brew install dstl8
 
