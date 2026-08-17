@@ -5,7 +5,6 @@
 class Dstl8 < Formula
   desc "CLI and TUI for the dstl8 observability platform"
   homepage "https://dstl8.ai"
-  version "0.2.8"
 
   on_macos do
     if Hardware::CPU.intel?
